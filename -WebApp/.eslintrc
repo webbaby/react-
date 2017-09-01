@@ -1,0 +1,43 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": 0,
+        "linebreak-style": 0,
+        "quotes": 0,
+        "no-extra-semi": 0,
+        "no-unused-expressions": 0,
+        "no-unused-vars": 0,
+        "no-console": 0,
+        "no-mixed-spaces-and-tabs": 0,
+        "no-cond-assign": 0
+    }
+}
+//"test": "echo \"Error: no test specified\" && exit 1"
+//"start": "webpack-dev-server --inline"
+// "build": "node node_modules/webpack/bin/webpack.js --colors --progress --display-error-details --display-cached"
+
+'style-loader',
+'css-loader',
+{
+loader: 'postcss-loader',
+options: {
+plugins: [require('autoprefixer')()],//自动加上浏览器前缀
+broswers: ['last 5 versions']
+}
+},
+{loader: 'less-loader'}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>大众点评webApp</title>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+   <div id="app"></div>
+   <div id="root"></div>
+</body>
+</html>
